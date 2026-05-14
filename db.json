@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Urban Oversized Hoodie",
+      "price": 65,
+      "category": "Hoodies",
+      "description": "Premium heavyweight cotton blend oversized hoodie. Perfect for the streets.",
+      "image": "https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=600&q=80",
+      "stock": 15,
+      "featured": true
+    },
+    {
+      "id": 2,
+      "name": "Classic Graphic Tee",
+      "price": 30,
+      "category": "T-Shirts",
+      "description": "100% cotton graphic tee with bold street art prints.",
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&q=80",
+      "stock": 40,
+      "featured": true
+    },
+    {
+      "id": 3,
+      "name": "Cargo Bomber Jacket",
+      "price": 120,
+      "category": "Jackets",
+      "description": "Utility-inspired bomber jacket with multiple cargo pockets.",
+      "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&q=80",
+      "stock": 10,
+      "featured": true
+    },
+    {
+      "id": 4,
+      "name": "UrbanThreadz Snapback",
+      "price": 25,
+      "category": "Accessories",
+      "description": "Embroidered logo snapback cap. One size fits all.",
+      "image": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=600&q=80",
+      "stock": 30,
+      "featured": false
+    },
+    {
+      "id": 5,
+      "name": "Street Runner Sneakers",
+      "price": 110,
+      "category": "Sneakers",
+      "description": "Lightweight chunky sole sneakers built for the urban jungle.",
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80",
+      "stock": 12,
+      "featured": true
+    },
+    {
+      "id": 6,
+      "name": "Slim Cargo Pants",
+      "price": 75,
+      "category": "Pants",
+      "description": "Tapered cargo pants with side zipper pockets.",
+      "image": "https://images.unsplash.com/photo-1594938298603-c8148c4b4d51?w=600&q=80",
+      "stock": 20,
+      "featured": false
+    },
+    {
+      "id": 7,
+      "name": "Acid Wash Hoodie",
+      "price": 70,
+      "category": "Hoodies",
+      "description": "Vintage acid wash finish zip-up hoodie with kangaroo pocket.",
+      "image": "https://images.unsplash.com/photo-1578768079052-aa76e52ff62e?w=600&q=80",
+      "stock": 8,
+      "featured": false
+    },
+    {
+      "id": 8,
+      "name": "Gold Chain Necklace",
+      "price": 40,
+      "category": "Accessories",
+      "description": "Chunky gold-tone layered chain. Street luxe vibes.",
+      "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&q=80",
+      "stock": 25,
+      "featured": false
+    }
+  ]
+}
