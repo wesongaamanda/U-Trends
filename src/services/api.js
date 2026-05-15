@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3001";
+const BASE_URL = "https://u-trends-1.onrender.com";
 
 // GET all products
 export const getProducts = async () => {
