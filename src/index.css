@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-black: #0A0A0A;
+  --brand-red: #E63946;
+  --brand-white: #F5F5F0;
+  --brand-gray: #1C1C1C;
+  --brand-lightgray: #2A2A2A;
+  --brand-beige: #C9B99A;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--brand-black);
+  color: var(--brand-white);
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--brand-black); }
+::-webkit-scrollbar-thumb { background: var(--brand-red); border-radius: 3px; }
+
+/* Utility classes */
+.font-display { font-family: 'Bebas Neue', sans-serif; }
+.font-mono { font-family: 'JetBrains Mono', monospace; }
+
+.btn-primary {
+  @apply bg-brand-red text-white font-body font-semibold px-6 py-3 tracking-wider uppercase text-sm transition-all duration-200 hover:bg-red-500 active:scale-95;
+}
+
+.btn-secondary {
+  @apply border border-brand-beige text-brand-beige font-body font-semibold px-6 py-3 tracking-wider uppercase text-sm transition-all duration-200 hover:bg-brand-beige hover:text-brand-black active:scale-95;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand-red/10;
+}
+
+.input-style {
+  @apply bg-brand-lightgray border border-white/10 text-brand-white px-4 py-3 w-full outline-none focus:border-brand-red transition-colors duration-200 placeholder-white/30;
+}
+
+.section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  @apply text-5xl text-brand-white tracking-widest;
+}
+
+.tag {
+  font-family: 'JetBrains Mono', monospace;
+  @apply text-xs text-brand-red border border-brand-red/40 px-2 py-0.5 tracking-widest uppercase;
+}
+
+/* Grain overlay */
+.grain::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.4;
+}
+
+@layer utilities {
+  .animate-fade-in { animation: fadeIn 0.5s ease-in-out; }
+  .animate-slide-up { animation: slideUp 0.4s ease-out; }
+  .animate-scale-in { animation: scaleIn 0.3s ease-out; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes scaleIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
